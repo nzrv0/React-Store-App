@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Product, Services, Loading } from "../components";
 
 import { useFeaturedProducts } from "../services/FetchFuturedProducts";
+import Hero1 from "../assets/hero1.jpeg";
+import Hero2 from "../assets/hero2.jpeg";
 
 function Home() {
     let product = useFeaturedProducts();
@@ -39,12 +41,12 @@ function Home() {
                     <div className="w-full hidden relative lg:block">
                         <img
                             className="w-[250px] h-40 absolute bottom-0 left-0 -translate-x-[50%] z-30 rounded-md"
-                            src="../src/assets/hero1.jpeg"
+                            src={Hero1}
                             alt=""
                         />
                         <img
                             className="max-w-full h-[550px] rounded-md before:contents-[''] before:inline-block before:h-24 before:w-4 before:bg-pink-500"
-                            src="../src/assets/hero2.jpeg"
+                            src={Hero2}
                             alt=""
                         />
                     </div>
